@@ -1,16 +1,9 @@
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
+  Sketch to open the valve for fluid delivery.
 
-  Most Arduinos have an on-board LED you can control. On the Uno and
-  Leonardo, it is attached to digital pin 13. If you're unsure what
-  pin the on-board LED is connected to on your Arduino model, check
-  the documentation at http://www.arduino.cc
-
-  This example code is in the public domain.
-
-  modified 8 May 2014
-  by Scott Fitzgerald
+  The valve is only opened if the delivered fluid was removed,
+  which is checked as no signal on phototransistor for a 
+  short period of time.
  */
 
 int switchIn = 0;
