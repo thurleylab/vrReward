@@ -49,7 +49,7 @@ void loop() {
     if ((breakActual - breakOnset) > 1000) {
       rewardEmpty = true;
 
-      for (int i = 0; i < 4; i++) {
+      for (int i = 0; i < 2; i++) {
         digitalWrite(13, HIGH);   // turn the LED on
         delay(100);
         digitalWrite(13, LOW);   // turn the LED off
@@ -64,7 +64,7 @@ void loop() {
     digitalWrite(3, HIGH);   // open the Valve
     digitalWrite(13, HIGH);   // turn the LED on
     
-    delay(1200);
+    delay(500);
 
     digitalWrite(3, LOW);    // close the Valve
     digitalWrite(13, LOW);   // turn the LED off
